@@ -22,3 +22,14 @@ def compare_versions(version1: str, version2: str) -> str:
         else:
             result = (f"{version1} is equal to {version2}")
     return result
+
+
+if __name__ == "__main__":
+    print(compare_versions("1.1.1", "1.1.2"))
+    print(compare_versions("1000.0.0", "1.0.0.0.0.0"))
+    print(compare_versions("10.0", "1.0.0.0.0.0"))
+    print(compare_versions("1.0.0.0.0.0","10.0"))
+    print(compare_versions("1.0","10.0"))
+    print(compare_versions("1.0.0.a.0.0","10.b"))
+    print(compare_versions("10.b.a","10.b"))
+    print(compare_versions("10.b.a","10.b.b"))
