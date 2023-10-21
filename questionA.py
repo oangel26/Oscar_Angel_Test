@@ -23,17 +23,24 @@ def check_line_overlap(line1: tuple , line2: tuple) -> bool:
         print("None of the lines provided overlaps")
         
 if __name__ == "__main__":
-    print("Please provide the coordinates on the x-axis of the for the folling two lines")
-    print("Line1 Coordinates:")
-    x1 = int(input("Enter x1: "))
-    x2 = int(input("Enter x2: "))
-    line1 = x1, x2
-    print()
+    while True:
+        try:
+            print()
+            print("Please provide the coordinates on the x-axis of the for the following two lines")
+            print()
+            print("Line1 Coordinates:")
+            x1 = int(input("Enter x1: "))
+            x2 = int(input("Enter x2: "))
+            line1 = x1, x2
+            print()
+            
+            print("Line 2 Coordinates: ")
+            x3 = int(input("Enter x3: "))
+            x4 = int(input("Enter x4: "))
+            line2 = x3, x4
     
-    print("Line 2 Coordinates: ")
-    x3 = int(input("Enter x3: "))
-    x4 = int(input("Enter x4: "))
-    line2 = x3, x4
-    
-    check_line_overlap(line1, line2)
-
+            check_line_overlap(line1, line2)
+           
+        except ValueError:  # Handle non-integer inputs.
+            print("Invalid input. Please enter a numerical value.")
+            
