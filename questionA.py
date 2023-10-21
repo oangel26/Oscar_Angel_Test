@@ -26,7 +26,7 @@ if __name__ == "__main__":
     while True:
         try:
             print()
-            print("Please provide the coordinates on the x-axis of the for the following two lines")
+            print("Please provide the coordinates on the x-axis for the following two lines ->")
             print()
             print("Line1 Coordinates:")
             x1 = int(input("Enter x1: "))
