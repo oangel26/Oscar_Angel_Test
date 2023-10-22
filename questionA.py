@@ -5,7 +5,7 @@ and (x3,x4) on the x-axis and returns whether they overlap.
 As an example, (1,5) and (2,6) overlaps but not (1,5) and (6,8).
 """
 def sort_vector(vector: tuple) -> tuple:
-    """Function which sorts a tuple chaninging its direction to positive"""
+    """Function which sorts a vector coordinates changing its direction to positive"""
     vector = list(vector)
     vector.sort()
     return tuple(vector)
