@@ -11,16 +11,19 @@ def sort_vector(vector: tuple) -> tuple:
     return tuple(vector)
 
 def check_line_overlap(line1: tuple , line2: tuple) -> bool:
-    """Method which checkes whether the two lines overlap"""
+    """Method which checks whether the two lines overlaps"""
     sorted_line1 = sort_vector(line1)
     sorted_line2 = sort_vector(line2)
 
     if  sorted_line1[0] < sorted_line2[0] and sorted_line2[0] < sorted_line1[1]:
-        print("The lines overlaps")
+        print()
+        print("The lines overlaps :( please try again")
     elif sorted_line1[0] < sorted_line2[1] and sorted_line2[1] < sorted_line1[1]:
-        print("The lines overlaps")
+        print()
+        print("The lines overlaps :( please try again")
     else:
-        print("None of the lines provided overlaps")
+        prin()
+        print("Well done!!! None of the lines provided overlaps")
         
 if __name__ == "__main__":
     while True:
@@ -28,15 +31,17 @@ if __name__ == "__main__":
             print()
             print("Please provide the coordinates on the x-axis for the following two lines ->")
             print()
-            print("Line1 Coordinates:")
+            print("-------Line1 Coordinates:--------")
             x1 = int(input("Enter x1: "))
             x2 = int(input("Enter x2: "))
+            print(f"The coordinates entered for your line1 are: ({x1},{x2})") 
             line1 = x1, x2
             print()
             
             print("Line 2 Coordinates: ")
             x3 = int(input("Enter x3: "))
             x4 = int(input("Enter x4: "))
+            print(f"The coordinates entered for your line2 are: ({x1},{x2})")
             line2 = x3, x4
     
             check_line_overlap(line1, line2)
