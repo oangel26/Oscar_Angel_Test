@@ -41,7 +41,7 @@ if __name__ == "__main__":
             print("Line 2 Coordinates: ")
             x3 = int(input("Enter x3: "))
             x4 = int(input("Enter x4: "))
-            print(f"The coordinates entered for your line2 are: ({x1},{x2})")
+            print(f"The coordinates entered for your line2 are: ({x3},{x4})")
             line2 = x3, x4
     
             check_line_overlap(line1, line2)
