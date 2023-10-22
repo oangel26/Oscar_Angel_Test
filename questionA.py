@@ -47,5 +47,7 @@ if __name__ == "__main__":
             check_line_overlap(line1, line2)
            
         except ValueError:  # Handle non-integer inputs.
-            print("Invalid input. Please enter a numerical value.")
+            print()
+            print("You have just entered an invalid input.")
+            print("Please enter a numerical value.")
             
