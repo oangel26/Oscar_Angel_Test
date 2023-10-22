@@ -5,20 +5,20 @@ and (x3,x4) on the x-axis and returns whether they overlap.
 As an example, (1,5) and (2,6) overlaps but not (1,5) and (6,8).
 """
 def sort_vector(vector: tuple) -> tuple:
-    """Function which sorts a vector coordinates changing its direction to positive"""
+    """Sorts a vector coordinates changing its direction to positive"""
     vector = list(vector)
     vector.sort()
     return tuple(vector)
 
 def check_if_dot(line: tuple) -> bool:
-    """Function which checks whether the line is a dot"""
+    """Checks whether the line is a dot"""
     line_is_dot = False
     if line[0] == line[1]:
         line_is_dot = True
     return line_is_dot
  
 def check_line_overlap(line1: tuple , line2: tuple):
-    """Function which checks whether the two lines overlaps"""
+    """Checks whether the two lines overlaps"""
     sorted_line1 = sort_vector(line1)
     sorted_line2 = sort_vector(line2)
 
